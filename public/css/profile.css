@@ -22,3 +22,21 @@ form.name_search {
 .clear = {
 	clear: both;
 }
+
+div.main_body {
+	width: 70%;
+	margin: 60px auto 0 auto;
+	border-bottom: 1px solid black;
+}
+
+div.main_body .main {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+div.friend_blog {
+	width: 70%;
+	margin: 0 auto;
+}
+
