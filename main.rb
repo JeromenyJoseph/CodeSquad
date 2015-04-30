@@ -8,3 +8,9 @@ set :database, "sqlite3:codersquad_db.sqlite3"
 set :sessions, true
 use Rack::Flash, sweep: true
 
+
+
+get '/profile' do
+	erb :profile
+end
+
