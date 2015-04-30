@@ -1,0 +1,23 @@
+body {
+	background-color: #CFCFCF;
+	background-image: url("img/codesquad.jpg");
+	background-size: cover;
+	
+
+}
+
+.signin {
+	margin-left: 850px;
+	color: #FFFFFF;
+}
+
+.top {
+	
+}
+
+#header {
+    opacity: 0.4;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
