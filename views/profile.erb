@@ -3,7 +3,7 @@
 	<div class="topbar">
 		<nav class="exit-edit">
 			<ul>
-				<a href="/home"><li class="logout">Log Out |</li></a>
+				<a href="/"><li class="logout">Log Out |</li></a>
 				<a href="/eprofile"><li>Edit Profile</li></a>
 			</ul>
 		</nav>
@@ -19,16 +19,16 @@
 
 	
 	<div class="main-body">
-		<h4 class="main">Welcome Back ** some name**</h4>
-		<div class="main">
-		 <img src="/img/under_construction.gif" width="400">
+		<p><%= flash[:notice] if flash[:notice] %></p>
+		<h4>Welcome Back <%= current_user.fname %></h4>
+		<div>
+		 <img src="/img/under_construction.gif" width="100">
 		</div>
 		<p class="main">Name:</p>
 		<p class="main">Job:</p>
 		<p class="main">Hobbies:</p>
 	</div>
 	
-	<hr>
 
 	<div class="friend-blog">
 		<div>
@@ -38,20 +38,16 @@
 		<br class="clear">
 
 		<div>
-			<p>Posting self blog</p>
+			<form action="/posting" method="POST">
+				<input for="text" name="post">
+				<input type="submit" value="Post" >
+			</form>
+			<% current_user.posts.reverse.each do |d| %>
+			<p> <%= d.post %> </p>
+			<% end %>	
 		</div>
-
-		<div>
-			<p>Friend's news feeds</p>
-			<p>Friend's news feeds</p>
-			<p>Friend's news feeds</p>
-			<p>Friend's news feeds</p>
-			<p>Friend's news feeds</p>
-			<p>Friend's news feeds</p>
-			<p>Friend's news feeds</p>
-			<p>Friend's news feeds</p>
-			<p>Friend's news feeds</p>
-			<p>Friend's news feeds</p>
-		</div>
+	</div>
+		
+	
 	</div>
 </body>

@@ -8,6 +8,15 @@ set :database, "sqlite3:codersquad_db.sqlite3"
 set :sessions, true
 use Rack::Flash, sweep: true
 
+
+def current_user
+	session[:user_id] ? User.find(session[:user_id]) : nil
+end
+
+def full_name
+	"#{current_user.fname} #{current_user.lname}"
+end
+
 get '/profile' do
 	erb :profile
 end
@@ -20,6 +29,18 @@ get '/' do
 	erb :home
 end
 
+post '/signin' do
+	@user = User.find_by_email(params[:email])
+	if @user && @user.password == params[:password]
+		flash[:notice] = "#{@user.fname} logged in"
+		session[:user_id] = @user.id
+		redirect to ('/profile')
+	else
+		flash[:notice] = "something is wrong..."
+		redirect to ('/')
+	end
+end
+
 get '/signup' do
 	erb :signup
 end
@@ -29,6 +50,12 @@ post '/sign_up' do
 	session[:user_id] = new_user.id
 	flash[:notice] ="new user created"
 	redirect to ('/')
+end
+
+post '/posting' do
+	@post = Post.create(post: params[:post])
+	current_user.posts << @post
+	redirect to ('/profile')
 end
 
 get '/nav' do

@@ -31,14 +31,15 @@ form.name-search {
 }
 
 div.main-body {
-	width: 70%;
-	margin: 60px auto 0 auto;
+/*	width: 70%;
+	margin: 60px auto 0 auto;*/
+	float: left;
+	height: 90%;
 }
 
 div.main-body .main {
-	width: 50%;
-	margin: 0 auto;
-	text-align: center;
+	/*float: left;*/
+
 }
 
 div.friend-blog {
