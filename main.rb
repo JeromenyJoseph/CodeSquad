@@ -14,3 +14,6 @@ get '/profile' do
 	erb :profile
 end
 
+get '/eprofile' do
+	erb :eprofile
+end

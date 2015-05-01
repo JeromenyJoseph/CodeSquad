@@ -1,21 +1,24 @@
 
-<body id="profile_body">
-	<nav class="exit_edit">
-		<ul>
-			<li class="logout">Log Out |</li>
-			<li>Edit Profile</li>
-		</ul>
-	</nav>
+<body class="profile-body">
+	<div class="topbar">
+		<nav class="exit-edit">
+			<ul>
+				<a href="/home"><li class="logout">Log Out |</li></a>
+				<a href="/eprofile"><li>Edit Profile</li></a>
+			</ul>
+		</nav>
 
-	<form action="/searc" method="get" class="name_search">
-		<label for="search">Search</label>
-		<input type="text" name="search">
-	</form>
+		<form action="/search" method="get" class="name-search">
+			<label for="search">Search</label>
+			<input type="text" name="search">
+		</form>
+		<br class="clear">
+	</div>
 
-	<br class="clear">
+
 
 	
-	<div class="main_body">
+	<div class="main-body">
 		<h4 class="main">Welcome Back ** some name**</h4>
 		<div class="main">
 		 <img src="/img/under_construction.gif" width="400">
@@ -24,10 +27,18 @@
 		<p class="main">Job:</p>
 		<p class="main">Hobbies:</p>
 	</div>
+	
+	<hr>
 
-	<div class="friend_blog">
+	<div class="friend-blog">
 		<div>
 			<a href="/friend">See all friends</a> 
+		</div>
+
+		<br class="clear">
+
+		<div>
+			<p>Posting self blog</p>
 		</div>
 
 		<div>
