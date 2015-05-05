@@ -1,0 +1,23 @@
+<body class="profile-body">
+	<div class="topbar">
+		<nav class="exit-edit">
+			<ul>
+				<a href="/"><li class="logout">Log Out |</li></a>
+				<a href="/profile"><li>Profile |</li></a>
+				<a href="/eprofile"><li>Edit Profile</li></a>
+			</ul>
+		</nav>
+	
+	<br class="clear">
+	
+	</div>
+	
+	<div class="edit-body user-list">	
+		<h2>Here a list of all users</h2>
+		
+		<ol>
+			<% @users.each do |user| %>
+			<li><%= user.fname %></li>
+			<%end%>
+		</ol>
+</body>

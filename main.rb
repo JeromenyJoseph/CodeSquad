@@ -72,3 +72,8 @@ end
 get '/eprofile' do
 	erb :eprofile
 end
+
+get '/users' do
+	@users = User.all 
+	erb :users
+end

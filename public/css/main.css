@@ -95,6 +95,10 @@ p.user-post {
 	border-radius: 5px;
 }
 
+div.main-body div img {
+	padding-top: 10px;
+}
+
 										/********************
 												Edit Profile
 										**********************/
@@ -103,19 +107,36 @@ form.edit-profile {
 	width: 140px;
 	margin: 0 auto;
 }
-form.edit-profile input {
-	/*display: block;*/
-}
 
 div.edit-body {
 	background: rgba(133, 163, 255, .5);
-	margin-top: -20px;
 	border-radius: 0 0 10px 10px;
 	padding-bottom: 20px;
+	margin-top: -20px;
 }
+
 div.edit-body div{
 	width: 170px;
 	margin: 0 auto;
 }
+
+			/********************
+						User list
+			**********************/
+div.user-list {
+	margin-top: 1px;
+}
+
+div.user-list h2 {
+	width: 230px;
+	margin: 0 auto;
+	padding: 10px 0 10px 0
+}
+
+div.user-list ol {
+	width: 100px;
+	margin: 0 auto;
+}
+
 
 
