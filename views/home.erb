@@ -2,30 +2,55 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-		<title>homepage</title>
-<link rel="stylesheet" type="text/css" href="/home.css">
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="/home.css">
 	
-	<div class="top">
-		<nav class="signin">
-			<form method="POST" action="/posts/new">
-			  <label for="title">Email</label>
-			  <input type="text" name="[post]title">
-			  <label for="text">Password</label>
-			  <input type="[post]text">
-			  <input type="submit" value="Launch Command">
-			</form>
-		</nav>
-	</div>
+<header class="banner" id="banner"></header>
+	<a href="/sign_up" class="signup">Sign Up</a>
+	
+		<div class="logo">
+			<img src="img/codelogo.png">
+		</div>
+	<!-- <nav>
+	    <ul class="cf">
+	    	
+	        <li><a class="dropdown1">Digital Press</a>
+	        	<ul>
+	                <li><a href="#">Whats New</a></li>
+	                <li><a href="#">Hot Topics</a></li>
+	                <li><a href="#">World Press</a></li>
+	            </ul>
+	        </li>	
+	       	
+	        <li><a class="dropdown" href="#">Innovations</a>
+	            <ul>
+	                <li><a href="#">Projects</a></li>
+	                <li><a href="#">Best rated</a></li>
+	                <li><a href="#">upcoming</a></li>
+	            </ul>
+	        </li>
+	    </ul>
+	</nav> -->
+
 </head>
-	<body>
-		<div id="header">
-			<h1>Code Squad</h1>
+ <body>
+ 	<div class= "pop">
+ 		<div id="signin">
+	 		<form ="POST" action="/sign-in">
+			  <label type="email">Email</label>
+			  <input type="text" placeholder="email" name="email" required >
+			  	<label for="password">Password</label>
+				<input type="text" placeholder="password" name="password" required >
+				  <input class="submit" type="submit">
+				</form>
+			
+
+		</div>
 	</div>
-
-
-
-
-
-
-	</body>
+	<footer class="footer">
+		<p>CodeSquad</p>
+		<p>Contact information: <a href="mailto:someone@example.com">contact@codesquad.com</a></p>
+	</footer>	
+</body>
+	
 </html>
