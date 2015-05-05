@@ -6,9 +6,14 @@ body.profile-body {
 
 div.topbar {
 	padding-top: 20px;
-	background-color: #3366FF;
+	background: #3366FF;
 	color: #FFF;
 }
+
+div.body-content {
+	background: rgba(133, 163, 255, .5);
+}
+
 
 div.topbar nav ul li {
 	color: #FFF;
@@ -22,9 +27,13 @@ div.topbar nav ul a:hover {
 	text-decoration: underline;
 }
 
+form.name-search {
+	padding-right: 3px;
+}
+
 nav.exit-edit {
 	float: left;
-	text-decoration: none;
+	padding-left: 3px;
 }
 
 nav.exit-edit ul {
@@ -47,6 +56,7 @@ br.clear {
 div.main-body {
 	width: 170px;
 	float: left;
+	padding-left: 3px;
 }
 
 
@@ -57,7 +67,7 @@ div.main-body .main {
 }
 
 div.friend-blog {
-	width: 350px;
+	width: 250px;
 	/*margin: 0 auto;*/
 	float: right;
 }
@@ -68,7 +78,19 @@ div.friend-blog div a {
 
 div.posts {
 	width: 135px;
+	margin-right: 0;
 
+}
+
+div.sub-body {
+	width: 60%;
+	margin: 0 auto;
+}
+p.user-post {
+	width: 140px;
+	margin: 10px 0 10px 0;
+	background-color: #FFF;
+	border-radius: 5px;
 }
 
 										/********************
