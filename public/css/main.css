@@ -107,4 +107,15 @@ form.edit-profile input {
 	/*display: block;*/
 }
 
+div.edit-body {
+	background: rgba(133, 163, 255, .5);
+	margin-top: -20px;
+	border-radius: 0 0 10px 10px;
+	padding-bottom: 20px;
+}
+div.edit-body div{
+	width: 170px;
+	margin: 0 auto;
+}
+
 
