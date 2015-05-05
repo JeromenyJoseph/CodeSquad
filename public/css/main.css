@@ -1,7 +1,8 @@
+
 body.profile-body {
 	width: 50%;
 	margin: 10px auto 0 auto;
-
+	background: url("img/codesquadx.jpg");
 }
 
 div.topbar {

@@ -1,23 +1,157 @@
 body {
 	background-color: #CFCFCF;
-	background-image: url("img/codesquad.jpg");
-	background-size: cover;
-	
-
-}
-
-.signin {
-	margin-left: 850px;
-	color: #FFFFFF;
-}
-
-.top {
+	background-image: url("img/codesquadx.jpg");
+	background: cover;
+    margin: 0;
 	
 }
+
+.signup {
+    color: #FFFFFF;
+    margin-left: 1233px;
+}
+.logo {
+    width: 650px;
+    margin: 0 auto;
+}
+
+.signin {s
+	margin-left: 1020px;
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+
+
 
 #header {
-    opacity: 1.0;
+    opacity: 0.5;
     color:white;
     text-align:center;
     padding:5px;
 }
+
+nav ul {
+  -webkit-font-smoothing:antialiased;
+  text-shadow:0 1px 0 #FFF;
+   /* background: #ddd;*/
+    list-style: none;
+    margin: -10px;
+    padding: 0;
+    width: 110%;
+}
+
+
+nav li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-width: 25%;
+}
+nav a {
+    background: #ddd;
+    color: #444;
+   display: block;
+    font: bold 16px/50px sans-serif;
+    padding: 0 25px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+nav .dropdown1:after {
+    content: ' ▶';
+}
+nav .dropdown1:hover:after {
+    content:'\25bc';
+}
+
+
+nav .dropdown:after {
+    content: ' ▶';
+}
+nav .dropdown:hover:after{
+  content:'\25bc';
+}
+nav li:hover a {
+    background: #ccc;
+}
+nav li ul {
+    float: left;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+nav li:hover ul {
+    opacity: 1;
+    top: 50px;
+    visibility: visible;
+}
+nav li ul li {
+    float: none;
+    width: 100%;
+}
+nav li ul a:hover {
+    background: #bbb;
+}
+
+/* Clearfix */
+
+.cf:after, .cf:before {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+.cf {
+    zoom:1;
+}​
+.footer {
+    display: block;
+}
+
+.pop {
+    border-radius: 85px;
+    background: #0500D2;
+    padding: 100px; 
+    width: 389px;
+    height: 123px;
+    margin: 200px auto 0 auto;
+    opacity: 0.8;
+    color: #FFFFFF;
+}
+
+div.pop #signin form input {
+    display: block;
+}
+
+.footer {
+    margin-top: 243px;
+   text-align: center;
+   background: #19D1FF;
+   margin-bottom: 0px;
+}
+.footer p {
+    margin-bottom: 0px;
+
+}
+
+div.pop #signin form input {
+    width: 250px;
+}
+
+
+    
+
