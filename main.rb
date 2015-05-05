@@ -14,10 +14,13 @@ def current_user
 end
 
 def full_name
-	"#{current_user.fname} #{current_user.lname}"
+	"#{current_user.fname.capitalize} #{current_user.lname.capitalize}"
 end
 
 get '/profile' do
+	@age = current_user.age
+	puts params.inspect
+	@location = current_user.location
 	erb :profile
 end
 
@@ -32,7 +35,7 @@ end
 post '/signin' do
 	@user = User.find_by_email(params[:email])
 	if @user && @user.password == params[:password]
-		flash[:notice] = "#{@user.fname} logged in"
+		flash[:notice] = "You've logged in"
 		session[:user_id] = @user.id
 		redirect to ('/profile')
 	else
@@ -48,8 +51,8 @@ end
 post '/sign_up' do 
 	new_user = User.create(params[:user])
 	session[:user_id] = new_user.id
-	flash[:notice] ="new user created"
-	redirect to ('/')
+	flash[:notice] ="Welcome #{new_user.fname}!"
+	redirect to ('/profile')
 end
 
 post '/posting' do

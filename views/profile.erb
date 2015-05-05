@@ -20,14 +20,21 @@
 		<div class="sub-body">	
 			<div class="profile-pic">
 				<div class="main-body">
-					<p><%= flash[:notice] if flash[:notice] %></p>
-					<h4>Welcome Back <%= current_user.fname %></h4>
+					
+					<% if flash[:notice] %>
+					<h4>
+						<%= flash[:notice] %>
+					<% else %>
+						<%= "Welcome Back #{current_user.fname.capitalize}!" %>
+					</h4>
+					<% end %>
+					
 					<div>
 					 <img src="/img/under_construction.gif" width="100">
 					</div>
-					<p class="main">Name:</p>
-					<p class="main">Job:</p>
-					<p class="main">Hobbies:</p>
+					<p class="main">Name: <%= full_name %> </p>
+					<p class="main">Age: <%= current_user.age %> </p>
+					<p class="main">Location: <%= current_user.location %> </p>
 				</div>
 				
 			</div>

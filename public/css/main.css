@@ -1,6 +1,6 @@
 body.profile-body {
 	width: 50%;
-	margin: 0 auto;
+	margin: 10px auto 0 auto;
 
 }
 
@@ -8,10 +8,12 @@ div.topbar {
 	padding-top: 20px;
 	background: #3366FF;
 	color: #FFF;
+	border-radius: 10px 10px 0 0;
 }
 
 div.body-content {
 	background: rgba(133, 163, 255, .5);
+	border-radius: 0 0 10px 10px;
 }
 
 
@@ -83,7 +85,7 @@ div.posts {
 }
 
 div.sub-body {
-	width: 60%;
+	width: 500px;
 	margin: 0 auto;
 }
 p.user-post {
