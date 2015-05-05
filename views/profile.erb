@@ -12,42 +12,46 @@
 			<label for="search">Search</label>
 			<input type="text" name="search">
 		</form>
+	<br class="clear">
+	
+	</div>
+	
+	<div class="body-content">
+		<div class="profile-pic">
+			<div class="main-body">
+				<p><%= flash[:notice] if flash[:notice] %></p>
+				<h4>Welcome Back <%= current_user.fname %></h4>
+				<div>
+				 <img src="/img/under_construction.gif" width="100">
+				</div>
+				<p class="main">Name:</p>
+				<p class="main">Job:</p>
+				<p class="main">Hobbies:</p>
+			</div>
+			
+		</div>
+
+
+		<div class="friend-blog">
+			<div>
+				<a href="/friend">See all friends</a> 
+			</div>
+
+			<br class="clear">
+
+			<div class="posts">
+				<form action="/posting" method="POST">
+					<input for="text" name="post">
+					<input type="submit" value="Post" >
+				</form>
+				<% current_user.posts.reverse.each do |d| %>
+				<p> <%= d.post %> </p>
+				<% end %>	
+			</div>
+		</div>	
 		<br class="clear">
 	</div>
 
-
-
+	<br class="clear">
 	
-	<div class="main-body">
-		<p><%= flash[:notice] if flash[:notice] %></p>
-		<h4>Welcome Back <%= current_user.fname %></h4>
-		<div>
-		 <img src="/img/under_construction.gif" width="100">
-		</div>
-		<p class="main">Name:</p>
-		<p class="main">Job:</p>
-		<p class="main">Hobbies:</p>
-	</div>
-	
-
-	<div class="friend-blog">
-		<div>
-			<a href="/friend">See all friends</a> 
-		</div>
-
-		<br class="clear">
-
-		<div>
-			<form action="/posting" method="POST">
-				<input for="text" name="post">
-				<input type="submit" value="Post" >
-			</form>
-			<% current_user.posts.reverse.each do |d| %>
-			<p> <%= d.post %> </p>
-			<% end %>	
-		</div>
-	</div>
-		
-	
-	</div>
 </body>

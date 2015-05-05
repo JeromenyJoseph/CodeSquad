@@ -1,16 +1,30 @@
 body.profile-body {
-	width: 80%;
+	width: 50%;
 	margin: 0 auto;
+
 }
 
 div.topbar {
-	width: 70%;
-	margin: 0 auto;
 	padding-top: 20px;
+	background-color: #3366FF;
+	color: #FFF;
+}
+
+div.topbar nav ul li {
+	color: #FFF;
+}
+
+div.topbar nav ul a:link {
+	text-decoration: none;
+}
+
+div.topbar nav ul a:hover {
+	text-decoration: underline;
 }
 
 nav.exit-edit {
 	float: left;
+	text-decoration: none;
 }
 
 nav.exit-edit ul {
@@ -26,29 +40,35 @@ form.name-search {
 	float: right;
 }
 
-.clear = {
+br.clear {
 	clear: both;
 }
 
 div.main-body {
-/*	width: 70%;
-	margin: 60px auto 0 auto;*/
+	width: 170px;
 	float: left;
-	height: 90%;
 }
 
+
+
 div.main-body .main {
-	/*float: left;*/
+	/*float: right;*/
 
 }
 
 div.friend-blog {
-	width: 70%;
-	margin: 0 auto;
+	width: 350px;
+	/*margin: 0 auto;*/
+	float: right;
 }
 
 div.friend-blog div a {
 	float: right;
+}
+
+div.posts {
+	width: 135px;
+
 }
 
 										/********************
