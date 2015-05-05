@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-		<title>homepage</title>
-<link rel="stylesheet" type="text/css" href="/home.css">
+
+
+<body>
+
+	<a href="/sign_up" class="signup">Sign Up</a>
 	
+	<div class="logo">
+		<img src="img/codelogo.png">
+	</div>
+
+
 	<div class="top">
 		<nav class="signin">
 			<form method="POST" action="/signin">
@@ -16,17 +20,27 @@
 			</form>
 		</nav>
 	</div>
+
+
+
+
 </head>
-	<body>
-		<div id="header">
-			<h1>Code Squad</h1>
-			<%= flash[:notice] if flash[:notice] %>
+ <body>
+ 	<div class= "pop">
+ 		<div id="signin">
+	 		<form ="POST" action="/sign-in">
+			  <label type="email">Email</label>
+			  <input type="text" placeholder="email" name="email" required >
+			  	<label for="password">Password</label>
+				<input type="text" placeholder="password" name="password" required >
+				  <input class="submit" type="submit">
+				</form>
+		</div>
 	</div>
 
-
-
-
-
-
-	</body>
-</html>
+	<footer class="footer">
+		<p>CodeSquad</p>
+		<p>Contact information: <a href="mailto:someone@example.com">contact@codesquad.com</a></p>
+	</footer>	
+</body>
+	
