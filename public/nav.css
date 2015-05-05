@@ -14,7 +14,7 @@ nav li {
     position: relative;
     min-width: 25%;
 }
-nav a {
+nav a,  {
     background: #ddd;
     color: #444;
     display: block;
@@ -27,6 +27,24 @@ nav a {
         -ms-transition: all .25s ease;
          -o-transition: all .25s ease;
             transition: all .25s ease;
+}
+
+.signin {
+    width: 200px;
+    display: none
+}
+
+
+
+
+nav .dropdown1:after {
+    content: ' ▶';
+}
+nav .dropdown1:hover:after{
+  content:'\25bc'
+}
+nav li:hover a {
+    background: #ccc;
 }
 nav .dropdown:after {
     content: ' ▶';
@@ -65,6 +83,16 @@ nav li ul a:hover {
 }
 
 /* Clearfix */
+.cf1:after, .cf:before {
+    content:"";
+    display:table;
+}
+.cf1:after {
+    clear:both;
+}
+.cf1 {
+    zoom:1;
+}​
 
 .cf:after, .cf:before {
     content:"";
