@@ -9,6 +9,14 @@ set :sessions, true
 use Rack::Flash, sweep: true
 
 
+get '/profile' do
+	erb :profile
+end
+
+get '/eprofile' do
+	erb :eprofile
+end
+
 get '/' do 
 	erb :home
 end
@@ -19,4 +27,12 @@ end
 
 get '/nav' do
 	erb :nav
+end
+
+get '/profile' do
+	erb :profile
+end
+
+get '/eprofile' do
+	erb :eprofile
 end

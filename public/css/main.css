@@ -1,0 +1,65 @@
+body.profile-body {
+	width: 80%;
+	margin: 0 auto;
+}
+
+div.topbar {
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+nav.exit-edit {
+	float: left;
+}
+
+nav.exit-edit ul {
+	margin-top: 0;
+	padding-left: 0;
+}
+nav.exit-edit ul li {
+	display: inline;
+	list-style: none;
+}
+
+form.name-search {
+	float: right;
+}
+
+.clear = {
+	clear: both;
+}
+
+div.main-body {
+	width: 70%;
+	margin: 60px auto 0 auto;
+}
+
+div.main-body .main {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+div.friend-blog {
+	width: 70%;
+	margin: 0 auto;
+}
+
+div.friend-blog div a {
+	float: right;
+}
+
+										/********************
+												Edit Profile
+										**********************/
+
+form.edit-profile {
+	width: 140px;
+	margin: 0 auto;
+}
+form.edit-profile input {
+	/*display: block;*/
+}
+
+
